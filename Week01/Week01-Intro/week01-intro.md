@@ -384,6 +384,20 @@ table {
 
 ---
 
+### Office Hours
+
+[Office Hours Schedule](https://docs.google.com/spreadsheets/d/1MoftTwxr_wjyl_deVmC_3-cBkPaNun6eaDzHGMgSnpY/edit?usp=sharing)
+
+**Don't just show up,** use [OHWL](https://ohwl.herokuapp.com/) to queue. Made by a UW student using React!
+
+Join w/ code `Q3C83PIE`
+
+**OH Start Next Week**
+
+![bg right 80%](figures/ohwl.png)
+
+---
+
 ### FAQs
 
 I have a question about grading.
