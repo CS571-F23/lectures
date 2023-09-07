@@ -233,7 +233,7 @@ Prof. Yuhang Zhao
 </div>
 
 ![bg right:50%](figures/amy.png)
-![bg right:50%](figures/hongtao.jpg)
+![bg right:50%](figures/zach.png)
 ![bg right:50%](figures/ru.png)
 ![bg right:50%](figures/leo.png)
 ![bg right:50%](figures/ruijia.png)
