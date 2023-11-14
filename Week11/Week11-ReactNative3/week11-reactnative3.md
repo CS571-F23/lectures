@@ -27,6 +27,10 @@ style: |
 
 ### Today's Warmup
 
+Check out [tomorrow's distinguished lecture](https://today.wisc.edu/events/view/186249)? 11 am @ CS1240. On the origins of JS & the web from a compilers/security perspective.
+
+
+
 <div>
 
  - Download and import [today's Postman collection](https://github.com/CS571-F23/week11-rn3-example)!
@@ -45,6 +49,7 @@ style: |
  - How to pass data using React Navigation?
  - How to perform "switch" navigation?
  - How to use overlays (modals)?
+ - How to make our apps accessible?
  - How to store secrets on mobile devices?
  - How to do advanced gestures and animations?
  - How to use sensors?
@@ -301,6 +306,80 @@ const styles = StyleSheet.create({
 
 ---
 
+# Accessibility
+
+Making our apps usable for everyone.
+
+---
+
+<div class="center-info">
+
+![w:800](figures/talkback.png)
+[TalkBack - Accessibility on Android](https://www.youtube.com/watch?v=_1yRVwhEv5I)
+
+</div>
+
+---
+
+<div class="center-info">
+
+![w:800](figures/voiceover.png)
+[VoiceOver - Accessibility on iOS](https://www.youtube.com/watch?v=qDm7GiKra28)
+
+</div>
+
+---
+
+### Accessibility
+
+`accessible` attribute indicates whether the component is an accessibility element and, if so, groups its children in a single  selectable element.
+
+```jsx
+<View accessible={false}>
+  <Text>text one</Text>
+  <Text>text two</Text>
+</View>
+```
+
+[More OS-Specific Functionality](https://reactnative.dev/docs/accessibility)
+
+---
+
+### Accessibility
+
+The `accessibilityLabel` attribute defines the screen reader description of the component whereas the `accessibilityHint` attribute helps the user understand what will happen if they perform an action.
+
+```jsx
+<Text
+ accessible={true}
+ accessibilityLabel={"Welcome to Find My Badgers!"}
+ accessibilityHint={"Click on a badger to learn more about them."}
+>
+ Welcome to Find My Badgers!
+</Text>
+```
+
+---
+
+### Your turn!
+
+Turn VoiceOver or TalkBack on and try to...
+
+<div>
+
+ - Send a message to a friend
+ - Browse the news
+ - Use an app/snack that we made
+   - **Hint:** You'll do this in HW10! :)
+
+</div>
+
+###
+
+[Accessible FindMyBadgers](https://snack.expo.dev/@ctnelson1997/findmybadgers-accessible)
+
+---
+
 # Secure Storage
 Storing secrets (asynchronously!)
 
@@ -374,19 +453,6 @@ Session UUIDs are another popular way to handle authentication, e.g.
 `642e4f9a-0d7a-44e5-ba60-e86822b4a8ac`
 
 This is *stateful*, a database maps this UUID to the corresponding claims.
-
----
-
-# Discuss & Debate
-Stateless vs. stateful authentication...
-
-<div>
-  
- - From the view of a user
- - From the view of a frontend developer
- - From the view of a backend developer
-
-</div>
 
 ---
 
@@ -674,11 +740,13 @@ App goes through a review process.
 
  - How to pass data using React Navigation?
  - How to perform "switch" navigation?
+ - How to use overlays (modals)?
+ - How to make our apps accessible?
  - How to store secrets on mobile devices?
  - How to do advanced gestures and animations?
  - How to use sensors?
  - How to deploy our apps?
-
+ 
 </div>
 
 ---
